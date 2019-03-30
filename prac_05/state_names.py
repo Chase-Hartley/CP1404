@@ -11,8 +11,8 @@ STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Te
 
 state = input("Enter short state: ")
 while state != "":
-    if state in STATE_NAMES:
-        print(state, "is", STATE_NAMES[state])
+    if state.upper() in STATE_NAMES:
+        print(state, "is", STATE_NAMES[state.upper()])
     else:
         print("Invalid short state")
     state = input("Enter short state: ")
