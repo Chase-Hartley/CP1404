@@ -4,6 +4,9 @@ Week 6 Prac 06
 Guitars Exercise
 """
 
+CURRENT_YEAR = 2019
+VINTAGE_AGE = 50
+
 
 class GuitarStorage:
 
@@ -16,11 +19,8 @@ class GuitarStorage:
     def __str__(self):
         return "{} ({}) : {}".format(self.name, self.year, self.cost)
 
-    def get_age(self, current_year, year=0):
-        self.current_year = current_year
-        self.year = year
-        year_difference = current_year - year
-        return year_difference
+    def get_age(self):
+        return CURRENT_YEAR - self.year
 
     def is_vintage(self):
-        return self.get_age()
+        return self.get_age() >= VINTAGE_AGE
