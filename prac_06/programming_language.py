@@ -3,6 +3,7 @@ Practical 06 Week 06 - Chase Hartley
 Initialized a class  called Programming Language
 """
 
+
 class ProgrammingLanguage:
 
     def __init__(self, name, typing, reflection, year):
